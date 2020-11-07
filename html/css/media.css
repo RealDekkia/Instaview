@@ -1,0 +1,84 @@
+#photoContainer,
+#storyContainer {
+    height: 38rem;
+}
+
+#photoContainerGrid,
+#storyContainerGrid {
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    gap: 0.5rem;
+    max-height: 35rem;
+    overflow-y: auto;
+}
+
+#photoContainerGrid>.photoContainerSquare,
+#storyContainerGrid>.storyContainerSquare {
+    width: 100%;
+    padding-top: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#storyContainerGrid>.storyContainerSquare {
+    padding-top: 200%;
+    background-size: contain;
+}
+
+#photoContainerBigBox,
+#storyContainerBigBox {
+    display: none;
+}
+
+#photoContainerBigBox>#photoContainerBigBoxHeadline,
+#storyContainerBigBox>#storyContainerBigBoxHeadline {
+    height: 50px;
+    background-color: #EFEFEF;
+}
+
+#photoContainerBigBox>#photoContainerBigBoxHeadline>.backButton,
+#storyContainerBigBox>#storyContainerBigBoxHeadline>.backButton {
+    display: inline-block;
+    line-height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: top;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#photoContainerBigBox>#photoContainerBigBoxHeadline>p,
+#storyContainerBigBox>#storyContainerBigBoxHeadline>p {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+#photoContainerBigBox>#photoContainerBigBoxPhoto,
+#storyContainerBigBox>#storyContainerBigBoxPhoto {
+    width: 100%;
+    padding-top: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#storyContainerBigBox>#storyContainerBigBoxPhoto {
+    width: 50%;
+    padding-top: 100%;
+    background-size: contain;
+}
+
+#photoContainerBigBox>#photoContainerBigBoxLocation,
+#photoContainerBigBox>#photoContainerBigBoxDate,
+#storyContainerBigBox>#storyContainerBigBoxDate {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+}

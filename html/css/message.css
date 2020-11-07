@@ -1,0 +1,114 @@
+#messageContainer {
+    height: 30rem;
+}
+
+#messageContainer #messageBox>div {
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    transition: 0.25s;
+}
+
+#messageContainer #messageBox>div>svg {
+    height: 40px;
+    width: 40px;
+    margin-top: 3px;
+    margin-left: 3px;
+    background-color: white;
+    border: 2px solid magenta;
+    border-radius: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+#messageContainer #messageBox>div>p {
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#messageContainer #messageBox>div:hover {
+    border-color: magenta !important;
+}
+
+#messageContainer #messageBox>div:hover>svg {
+    border-color: transparent;
+}
+
+#messageContainer #chatHistory {
+    display: none;
+    max-height: 35rem;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#messageContainer #chatHistory .chatbubble {
+    width: 60%;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    min-height: 1rem;
+}
+
+#messageContainer #chatHistory .chatbubble .bubbleDateString {
+    text-align: right;
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+#messageContainer #chatHistory .otherbubble {
+    background-color: #DDD;
+}
+
+#messageContainer #chatHistory .mybubble {
+    background-color: #AAA;
+    margin-left: 35%;
+}
+
+#messageContainer #chatHistory .chatbubble .mediaImage {
+    width: 90%;
+    margin: auto;
+    min-height: 2rem;
+}
+
+#messageContainer #chatHistory #chatHistoryHeader {
+    height: 50px;
+    background-color: #EFEFEF;
+    position: sticky;
+    top: -1rem;
+}
+
+#messageContainer #chatHistory #chatHistoryHeader>svg {
+    height: 40px;
+    width: 40px;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid magenta;
+    border-radius: 40px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#messageContainer #chatHistory #chatHistoryHeader>p {
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#messageContainer #chatHistory #chatHistoryHeader .chatHistoryBackButton {
+    display: inline-block;
+    line-height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: top;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#messageContainer #chatHistory #chatHistoryHeader .chatHistoryBackButton:hover {
+    filter: hue-rotate(90deg);
+}
